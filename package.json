@@ -1,8 +1,8 @@
 {
   "name": "bitcoin-convert",
-  "description": "Conversion between the bitcoin base unit (BTC) and other units (Satoshi,  μBTC, ...)",
-  "homepage": "https://github.com/richardschneider/bitcoin-convert",
-  "bugs": "https://github.com/richardschneider/bitcoin-convert/issues",
+  "description": "Conversion between the Title Network base unit (TNET) and other units (Satoshi,  μTNET, ...)",
+  "homepage": "https://github.com/title-network/bitcoin-convert",
+  "bugs": "https://github.com/title-network/bitcoin-convert/issues",
   "license": "MIT",
   "main": "index.js",
   "browser": "browser.js",
@@ -24,16 +24,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/richardschneider/bitcoin-convert"
+    "url": "https://github.com/title-network/bitcoin-convert"
   },
   "keywords": [
-    "bitcoin",
-    "BTC",
+    "Title Network",
+    "TNET",
     "convert",
     "SI",
     "satoshi",
-    "μBTC",
-    "microBTC"
+    "μTNET",
+    "microTNET"
   ],
   "dependencies": {
     "big.js": "^3.1.3"
@@ -69,7 +69,7 @@
       "commit-msg": "validate-commit-msg"
     },
     "deployToGit": {
-      "repository": "https://$GH_TOKEN@github.com/richardschneider/bitcoin-convert",
+      "repository": "https://$GH_TOKEN@github.com/title-network/bitcoin-convert",
       "branch": "gh-pages",
       "folder": "site",
       "script": "gulp site",

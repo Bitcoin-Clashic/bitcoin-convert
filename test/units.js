@@ -7,9 +7,9 @@ describe('Units', () => {
     it('should be array', () => {
         var units = convert.units();
         units.should.be.an.Array();
-        units.should.containEql('BTC');
-        units.should.containEql('mBTC');
-        units.should.containEql('μBTC');
+        units.should.containEql('TNET');
+        units.should.containEql('mTNET');
+        units.should.containEql('μTNET');
         units.should.containEql('Satoshi');
     });
 
@@ -24,9 +24,9 @@ describe('Units', () => {
         });
 
         it('should not add an existing unit with a different conversion factor', () => {
-            convert.units().should.containEql('BTC');
-            convert.addUnit('BTC', 1);
-            should.throws(() => convert.addUnit('BTC', 3));
+            convert.units().should.containEql('TNET');
+            convert.addUnit('TNET', 1);
+            should.throws(() => convert.addUnit('TNET', 3));
         });
 
         it('should remove a new unit', () => {
@@ -44,8 +44,8 @@ describe('Units', () => {
         });
 
         it('should not remove a predefined unit', () => {
-            convert.units().should.containEql('BTC');
-            should.throws(() => convert.removeUnit('BTC'));
+            convert.units().should.containEql('TNET');
+            should.throws(() => convert.removeUnit('TNET'));
         });
 
     });
