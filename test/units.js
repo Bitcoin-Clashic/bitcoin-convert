@@ -7,9 +7,9 @@ describe('Units', () => {
     it('should be array', () => {
         var units = convert.units();
         units.should.be.an.Array();
-        units.should.containEql('TNET');
-        units.should.containEql('mTNET');
-        units.should.containEql('μTNET');
+        units.should.containEql('BCHC');
+        units.should.containEql('mBCHC');
+        units.should.containEql('μBCHC');
         units.should.containEql('Satoshi');
     });
 
@@ -24,9 +24,9 @@ describe('Units', () => {
         });
 
         it('should not add an existing unit with a different conversion factor', () => {
-            convert.units().should.containEql('TNET');
-            convert.addUnit('TNET', 1);
-            should.throws(() => convert.addUnit('TNET', 3));
+            convert.units().should.containEql('BCHC');
+            convert.addUnit('BCHC', 1);
+            should.throws(() => convert.addUnit('BCHC', 3));
         });
 
         it('should remove a new unit', () => {
@@ -44,8 +44,8 @@ describe('Units', () => {
         });
 
         it('should not remove a predefined unit', () => {
-            convert.units().should.containEql('TNET');
-            should.throws(() => convert.removeUnit('TNET'));
+            convert.units().should.containEql('BCHC');
+            should.throws(() => convert.removeUnit('BCHC'));
         });
 
     });

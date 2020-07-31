@@ -1,8 +1,8 @@
 {
   "name": "bitcoin-convert",
-  "description": "Conversion between the Title Network base unit (TNET) and other units (Satoshi,  μTNET, ...)",
-  "homepage": "https://github.com/title-network/bitcoin-convert",
-  "bugs": "https://github.com/title-network/bitcoin-convert/issues",
+  "description": "Conversion between the Bitcoin Clashic base unit (BCHC) and other units (Satoshi,  μBCHC, ...)",
+  "homepage": "https://github.com/Bitcoin-Clashic/bitcoin-convert",
+  "bugs": "https://github.com/Bitcoin-Clashic/bitcoin-convert/issues",
   "license": "MIT",
   "main": "index.js",
   "browser": "browser.js",
@@ -24,16 +24,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/title-network/bitcoin-convert"
+    "url": "https://github.com/Bitcoin-Clashic/bitcoin-convert"
   },
   "keywords": [
-    "Title Network",
-    "TNET",
+    "Bitcoin Clashic",
+    "BCHC",
     "convert",
     "SI",
     "satoshi",
-    "μTNET",
-    "microTNET"
+    "μBCHC",
+    "microBCHC"
   ],
   "dependencies": {
     "big.js": "^3.1.3"
@@ -69,7 +69,7 @@
       "commit-msg": "validate-commit-msg"
     },
     "deployToGit": {
-      "repository": "https://$GH_TOKEN@github.com/title-network/bitcoin-convert",
+      "repository": "https://$GH_TOKEN@github.com/Bitcoin-Clashic/bitcoin-convert",
       "branch": "gh-pages",
       "folder": "site",
       "script": "gulp site",
